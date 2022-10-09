@@ -14,6 +14,7 @@ RUN set -eux; \
     apkArch="$(apk --print-arch)"; \
     case "$apkArch" in \
         armhf) ARCH='arm' ;; \
+        s390x) ARCH='s390x' ;; \
         aarch64) ARCH='arm64' ;; \
         x86_64) ARCH='amd64' ;; \
         x86) ARCH='386' ;; \
