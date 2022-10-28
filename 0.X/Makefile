@@ -3,7 +3,7 @@ export VERSION=1.11.4
 
 .PHONY: build ent-image oss-image xc-prod-image
 
-build: ent-image oss-image
+build: ent-image
 
 ent-image: export PROJECT_NAME=vault-enterprise
 ent-image: export TAG_SUFFIX=_ent
